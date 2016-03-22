@@ -16,6 +16,7 @@ public class JavaProject1 {
      */
     public static void main(String[] args) {
        System.out.print("fdfdf");
+       System.out.print("fdfdf");
        
     }
     
