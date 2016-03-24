@@ -5,6 +5,8 @@
  */
 package javaproject1;
 
+import javax.swing.UIManager;
+
 /**
  *
  * @author Woony
@@ -43,11 +45,55 @@ public class MainFrame extends javax.swing.JFrame {
     private void initComponents() {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
+        jLabel13 = new javax.swing.JLabel();
+        v_ownership = new javax.swing.ButtonGroup();
+        jTextField3 = new javax.swing.JTextField();
+        jComboBox5 = new javax.swing.JComboBox<>();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jTabbedPane2 = new javax.swing.JTabbedPane();
         jPanel3 = new javax.swing.JPanel();
+        jPanel9 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField1 = new javax.swing.JTextField();
+        v_num = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jComboBox3 = new javax.swing.JComboBox<>();
+        jComboBox2 = new javax.swing.JComboBox<>();
+        jComboBox4 = new javax.swing.JComboBox<>();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        v_name = new javax.swing.JTextField();
+        jRadioButton1 = new javax.swing.JRadioButton();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jRadioButton2 = new javax.swing.JRadioButton();
+        jPanel10 = new javax.swing.JPanel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jTextField4 = new javax.swing.JTextField();
+        jTextField5 = new javax.swing.JTextField();
+        jTextField6 = new javax.swing.JTextField();
+        jTextField7 = new javax.swing.JTextField();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jPanel13 = new javax.swing.JPanel();
+        Method = new javax.swing.JLabel();
+        jComboBox6 = new javax.swing.JComboBox<>();
+        jTextField8 = new javax.swing.JTextField();
+        jLabel20 = new javax.swing.JLabel();
+        jPanel14 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jTabbedPane3 = new javax.swing.JTabbedPane();
         jPanel5 = new javax.swing.JPanel();
@@ -72,6 +118,12 @@ public class MainFrame extends javax.swing.JFrame {
         jToggleButton4 = new javax.swing.JToggleButton();
         jToggleButton5 = new javax.swing.JToggleButton();
         jToggleButton6 = new javax.swing.JToggleButton();
+
+        jLabel13.setText("jLabel13");
+
+        jTextField3.setText("jTextField3");
+
+        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setAlwaysOnTop(true);
@@ -120,19 +172,170 @@ public class MainFrame extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(177, 204, 231));
         jPanel3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 551, Short.MAX_VALUE)
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 318, Short.MAX_VALUE)
-        );
+        jPanel9.setBackground(new java.awt.Color(177, 204, 231));
+        jPanel9.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Vehicle Details"));
+        jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTabbedPane2.addTab("tab1", jPanel3);
+        jLabel3.setText("Vehicle number:");
+        jPanel9.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 90, 20));
+
+        jLabel4.setText("Vehicle name:");
+        jPanel9.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 80, 20));
+
+        jLabel8.setText("No.of Seats:");
+        jPanel9.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 80, 20));
+
+        jLabel10.setText("Color:");
+        jPanel9.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 40, 20));
+        jPanel9.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 120, 70, -1));
+
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        jPanel9.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 90, 50, -1));
+
+        v_num.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                v_numActionPerformed(evt);
+            }
+        });
+        jPanel9.add(v_num, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 30, 70, -1));
+
+        jLabel5.setText("Vehicle type:");
+        jPanel9.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 30, -1, 20));
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select", "saloon", "suv", "Van", "hatchback", "lorry", "bus", " " }));
+        jPanel9.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 30, -1, -1));
+
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select", "Petrol", "Diesel", "Hybrid", "Electric", "Gas", "Electric/Hybrid", " " }));
+        jPanel9.add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 60, 80, -1));
+
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select", "1980", "1981", "1982", "1983", "1984", "1985", "1986", "1987", "1988", "1989", "1990", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998", "1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", " " }));
+        jPanel9.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 90, -1, -1));
+
+        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Yes", "No" }));
+        jPanel9.add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 120, -1, -1));
+
+        jLabel9.setText("A/C:");
+        jPanel9.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 120, 30, 20));
+
+        jLabel6.setText("Year:");
+        jPanel9.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 90, 30, 20));
+
+        jLabel7.setText("Fuel-type:");
+        jPanel9.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 60, 50, 20));
+
+        v_name.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                v_nameActionPerformed(evt);
+            }
+        });
+        jPanel9.add(v_name, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 60, 70, -1));
+
+        jRadioButton1.setBackground(new java.awt.Color(177, 204, 231));
+        v_ownership.add(jRadioButton1);
+        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton1ActionPerformed(evt);
+            }
+        });
+        jPanel9.add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, 20, 20));
+
+        jLabel15.setText("Owner:");
+        jPanel9.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, 40, 20));
+
+        jLabel16.setText("Company");
+        jPanel9.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 150, 50, 20));
+
+        jLabel17.setText("Other");
+        jPanel9.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 150, 30, 20));
+
+        jRadioButton2.setBackground(new java.awt.Color(177, 204, 231));
+        v_ownership.add(jRadioButton2);
+        jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton2ActionPerformed(evt);
+            }
+        });
+        jPanel9.add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 150, -1, -1));
+
+        jPanel3.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 380, 180));
+
+        jPanel10.setBackground(new java.awt.Color(177, 204, 231));
+        jPanel10.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Owner Details"));
+        jPanel10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel11.setText("Name:");
+        jPanel10.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 40, 20));
+
+        jLabel12.setText("Adress:");
+        jPanel10.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 40, 20));
+
+        jLabel14.setText("Contact:");
+        jPanel10.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 50, 20));
+
+        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField4ActionPerformed(evt);
+            }
+        });
+        jPanel10.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 20, 210, -1));
+        jPanel10.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 50, 210, -1));
+
+        jTextField6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField6ActionPerformed(evt);
+            }
+        });
+        jPanel10.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, 120, -1));
+
+        jTextField7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField7ActionPerformed(evt);
+            }
+        });
+        jPanel10.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 80, 120, -1));
+
+        jLabel18.setText("Home-");
+        jPanel10.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 80, -1, 20));
+
+        jLabel19.setText("Mobile-");
+        jPanel10.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 80, -1, 20));
+
+        jPanel3.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 380, 110));
+
+        jButton1.setText("Add");
+        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 280, 60, -1));
+
+        jButton2.setText("Reset");
+        jPanel3.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 280, -1, -1));
+
+        jPanel13.setBackground(new java.awt.Color(177, 204, 231));
+        jPanel13.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Rates"));
+        jPanel13.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Method.setText("Method:");
+        jPanel13.add(Method, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 40, 20));
+
+        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select", "Per day plan", "Per KM Plan" }));
+        jPanel13.add(jComboBox6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, 70, -1));
+        jPanel13.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, 70, -1));
+
+        jLabel20.setText("Rate:");
+        jPanel13.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 40, 20));
+
+        jPanel3.add(jPanel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 10, 130, 80));
+
+        jPanel14.setBackground(new java.awt.Color(177, 204, 231));
+        jPanel14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel3.add(jPanel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 100, 130, 120));
+
+        jTabbedPane2.addTab("Add", jPanel3);
 
         jPanel4.setBackground(new java.awt.Color(177, 204, 231));
         jPanel4.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -145,10 +348,10 @@ public class MainFrame extends javax.swing.JFrame {
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 318, Short.MAX_VALUE)
+            .addGap(0, 313, Short.MAX_VALUE)
         );
 
-        jTabbedPane2.addTab("tab2", jPanel4);
+        jTabbedPane2.addTab("View", jPanel4);
 
         getContentPane().add(jTabbedPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 70, 560, 350));
 
@@ -336,6 +539,11 @@ public class MainFrame extends javax.swing.JFrame {
         getContentPane().add(jToggleButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 280, 130, 70));
 
         buttonGroup1.add(jToggleButton6);
+        jToggleButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButton6ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jToggleButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 350, 130, 80));
 
         pack();
@@ -344,8 +552,8 @@ public class MainFrame extends javax.swing.JFrame {
     private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
         
         jTabbedPane1.setVisible(false);
-          jTabbedPane5.setVisible(true);
-           jTabbedPane2.setVisible(false);
+          jTabbedPane5.setVisible(false);
+           jTabbedPane2.setVisible(true);
             jTabbedPane3.setVisible(false);
              jTabbedPane4.setVisible(false);
              
@@ -418,6 +626,53 @@ public class MainFrame extends javax.swing.JFrame {
          financial.setVisible(true);
     }//GEN-LAST:event_jToggleButton5ActionPerformed
 
+    private void jToggleButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton6ActionPerformed
+      jTabbedPane1.setVisible(false);
+          jTabbedPane5.setVisible(false);
+           jTabbedPane2.setVisible(false);
+            jTabbedPane3.setVisible(false);
+             jTabbedPane4.setVisible(true);
+             
+              reservation.setVisible(false);   
+         vehicle.setVisible(false);
+         driver.setVisible(false);
+         pakage.setVisible(false);
+         about.setVisible(true);
+         financial.setVisible(false);
+    }//GEN-LAST:event_jToggleButton6ActionPerformed
+
+    private void v_numActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_v_numActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_v_numActionPerformed
+
+    private void v_nameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_v_nameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_v_nameActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton1ActionPerformed
+
+    private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
+     
+    }//GEN-LAST:event_jRadioButton2ActionPerformed
+
+    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField4ActionPerformed
+
+    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField6ActionPerformed
+
+    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField7ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -430,7 +685,7 @@ public class MainFrame extends javax.swing.JFrame {
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                   UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
                     break;
                 }
             }
@@ -458,15 +713,45 @@ public class MainFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Method;
     private javax.swing.JLabel about;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JLabel driver;
     private javax.swing.JLabel financial;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox2;
+    private javax.swing.JComboBox<String> jComboBox3;
+    private javax.swing.JComboBox<String> jComboBox4;
+    private javax.swing.JComboBox<String> jComboBox5;
+    private javax.swing.JComboBox<String> jComboBox6;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
+    private javax.swing.JPanel jPanel13;
+    private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
@@ -474,11 +759,22 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel9;
+    private javax.swing.JRadioButton jRadioButton1;
+    private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTabbedPane jTabbedPane2;
     private javax.swing.JTabbedPane jTabbedPane3;
     private javax.swing.JTabbedPane jTabbedPane4;
     private javax.swing.JTabbedPane jTabbedPane5;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextField8;
     private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JToggleButton jToggleButton2;
     private javax.swing.JToggleButton jToggleButton3;
@@ -487,6 +783,9 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JToggleButton jToggleButton6;
     private javax.swing.JLabel pakage;
     private javax.swing.JLabel reservation;
+    private javax.swing.JTextField v_name;
+    private javax.swing.JTextField v_num;
+    private javax.swing.ButtonGroup v_ownership;
     private javax.swing.JLabel vehicle;
     // End of variables declaration//GEN-END:variables
 }
