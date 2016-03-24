@@ -370,6 +370,7 @@ public class MainFrame extends javax.swing.JFrame {
          pakage.setVisible(false);
          about.setVisible(false);
          financial.setVisible(false);
+         //
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
     private void jToggleButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton3ActionPerformed
